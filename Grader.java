@@ -9,14 +9,7 @@ public class Grader {
 
             
         for (int i = 0; i < n; i++){
-            int grade;
-
-            // Avoid keep reading empty lines, and stops as soon as the next input line is empty
-            try {
-                grade = scan.nextInt();
-            } catch (NoSuchElementException e) {
-                break; 
-            }
+             int grade = scan.nextInt();
 
             if (grade >= 38){
                 int nextMultiple5 = ((grade / 5) + 1) * 5;
